@@ -1,3 +1,38 @@
+# Aufgabenverwaltungs-App
+
+Dies ist eine Aufgabenverwaltungs-App, die es Benutzern ermöglicht, Aufgaben hinzuzufügen, zu aktualisieren und zu löschen. Die App verwendet React für das Frontend und Axios für API-Anfragen.
+
+## Voraussetzungen
+
+Stellen Sie sicher, dass die folgenden Softwarekomponenten auf Ihrem System installiert sind:
+
+- [Node.js](https://nodejs.org/) (einschließlich npm)
+- Ein Paketmanager wie npm oder yarn
+
+## Installation
+
+1. Klonen Sie das Repository oder laden Sie den Quellcode herunter.
+2. Navigieren Sie im Terminal oder in der Eingabeaufforderung zum Stammverzeichnis des Projekts.
+cd pfad/zum/projekt
+3. Installieren Sie die Abhängigkeiten:
+   
+  npm install
+  
+  npm run dev
+
+when you something like that:
+        > task-management-app@0.0.0 dev
+        > vite
+        
+        Debugger attached.
+        Port 5173 is in use, trying another one...
+        
+          VITE v6.0.7  ready in 343 ms
+        
+          ➜  Local:   http://localhost:5174/
+          ➜  Network: use --host to expose
+          ➜  press h + enter to show help
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
