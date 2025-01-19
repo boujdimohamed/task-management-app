@@ -1,0 +1,266 @@
+.task-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-card h3 {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin: 0 0 0.8rem;
+  }
+  
+  .task-card.completed {
+    background-color: #e6ffe6;  
+    border-color: #00cc00; 
+  }
+
+  .task-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3px;
+  }
+  .pretag { font-family: "Courier New"
+                    Courier
+                    monospace; }
+  
+  .task-tag {
+    background-color: #adb4bb;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
+
+  
+  .progress-bar {
+    background: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4e3dec, #387dcc, #4a90e2, #cc3dec);
+    transition: width 0.3s ease;
+  }
+  
+  .hint-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+  }
+  .hint {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  .task-actions button {
+    background-color: #6a5af9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    margin: 0 9rem; 
+  }
+
+  .task-actions button:disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed; 
+  }
+  
+  .task-actions button:hover {
+    background: linear-gradient(90deg, #387dcc, #4a90e2, #4e3dec);
+  }
+  
+  .task-actions button:active {
+    transform: scale(0.95);
+  }
+  
+.fab {
+  position: fixed;
+  bottom: 80px; 
+  right: 40px;
+  width: 56px;
+  height: 56px;
+  background-color: #6200ea; 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fab:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+  
+.task-actions button:nth-child(2):hover {
+    background: linear-gradient(90deg, #ff4d4f, #ff6b6b, #ff4d4f);
+}
+  
+  .task-actions button:nth-child(2) {
+    background-color: #e43e3e;
+  }
+  
+.task-actions button:nth-child(1):hover {
+background: linear-gradient(90deg, #32cd32, #7cfc00, #32cd32);
+}
+  
+.task-actions button:nth-child(1) {
+    background-color: #05a736;
+  }
+  .btn{
+    max-width: 80px;
+    margin: 0 auto;
+  }
+
+  
+  .task-details {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .pagination button {
+    background-color: #8a8e95;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .pagination button.active {
+    background-color: #44f40e;
+    color: rgb(21, 14, 14);
+    font-weight: bold;
+  }
+  
+  .pagination button:hover {
+    background: linear-gradient(90deg, #e0e0e0, #f0f0f0);
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .task-card {
+      padding: 1rem;
+    }
+  
+    .task-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .pagination button {
+      padding: 0.5rem;
+      font-size: 0.85rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+  .task-card {
+    width: 90%;
+  }
+
+  .fab {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+  }
+
+  .pagination button {
+    padding: 2px 12px;
+  }
+}
+@media (max-width: 100%) {
+  .task-card {
+    width: 95%;
+  }
+
+  .task-actions button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-card {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .task-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .task-actions button {
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .fab {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2em;
+  }
+}
+
+
